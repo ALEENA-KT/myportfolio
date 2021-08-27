@@ -1,13 +1,191 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html lang="en">
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aleena - Portfolio</title>
+  <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Scroll Top Button -->
+<div class="scroll-top">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18" />
+    </svg>
+  </div>
+
+<!-- Navigation -->
+<section id="navigation">
+    <div class="nav-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </div>
+  </section>
+  <div id="nav-content">
+    <div class="close-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </div>
+    <div class="wrapper">
+      <h2 class="section-heading">Menu</h2>
+      <nav>
+        <ul>
+          <li><a data-text="Home" href="./index.html#hero">Home</a></li>
+          <li><a data-text="About" href="./index.html#about">About</a></li>
+          <li><a data-text="Skills" href="./index.html#skills">skills</a></li>
+          <li><a data-text="Contact" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+<!-- Hero section -->
+<section id="hero">
+  <div class="container">
+    <div class="left">
+      <p class="subheading">I'm Aleena K T</p>
+      <h2 class="heading">
+        <div class="wrapper"><span>Pixels</span></div>
+        <div class="wrapper"><span>with</span></div>
+        <div class="wrapper"><span>purpose</span></div>
+      </h2>
+      <p class="desc">I am currently pursuing my b-tech degree in electrical and electronics from nss college of engineering palakkad</p>
+      <div class="buttons">
+        <a href="#projects" class="primary-btn">See My Works</a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+              d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+              d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="right">
+      <img src="./images/profile.jpeg" alt="">
+    </div>
+  </div>
+</section>
+<!-- About -->
+<section id="about">
+    <div class="container">
+      <h2 class="section-heading" data-outline="about">ABOUT</h2>
+      <div class="wrapper">
+        <div class="left">
+          <div class="card">
+            <div class="img">
+              <img src="./images/profile.jpeg" alt="">
+            </div>
+            <p class="card-desc">"If you cannot do great things,do small things in a great way"</p>
+            <h3 class="card-name">Napoleon Hill</h3>
+          </div>
+        </div>
+        <div class="right">
+          <p class="subheading">Hi! This is Aleena
+          </p>
+          <h2 class="slogan">Student</h2>
+          <p class="right-text">I am first year b-tech student at nssce palakkad. I love the Web platform,machine learning
+            and I need to improve it for
+            everybody. What's more, I believe myself to be totally honored that I will assemble it professionally.
+          </p>
+          <div class="buttons">
+            <a href="./contact.html" class="primary-btn outline">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-heading" data-outline="skills">SKILLS</h2>
+      <div class="all-items">
+        <div class="item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+            </svg>
+          </div>
+          <h3 class="item-heading">machine learning</h3>
+          <p class="item-desc">I can classify images using machine learnig tools and makes binary classifiers 
+          </p>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+            </svg>
+          </div>
+          <h3 class="item-heading">PS</h3>
+          <p class="item-desc">I do graphic design for some pages that assists pages to get an outstanding look. Unique
+            design creates an unique personality for pages
+          </p>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+          </div>
+          <h3 class="item-heading">Python</h3>
+          <p class="item-desc">With a Python data visualization library,i can create a variety of plots and visual representations
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Footer Section -->
+   <section id="footer">
+    <div class="container">
+      <footer>
+        <div class="col-1">
+          <div class="logo"><a href="#">
+              <img src="./images/logo .png" alt="">
+            </a></div>
+          <p>Tech gives the quietest student a voice </p>
+        </div>
+        <div class="col-2">
+          <h2 class="column-heading">Important<br>Links</h2>
+          <ul>
+            <li><a href="./index.html#home">Home</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html#skills">Skills</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h2 class="column-heading">Contact<br>Info</h2>
+          <ul>
+            <li><a href="#">aleenakt805@gmail.com</a></li>
+            <li><a href="#">+919207408059</a></li>
+            <li><a href="#">Thrissur,Kerala</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h2 class="column-heading">Social<br>Links</h2>
+          <ul>
+            <li><a href="#">FB</a></li>
+            <li><a href="#">TW</a></li>
+            <li><a href="#">IG</a></li>
+            <li><a href="#">Li</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </section>
+  <section id="copyright">
+    <div class="container">
+      <p> &copy; Copyright 2021 Aleena. All right Reserved</p>
+    </div>
+  </section>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
